@@ -30,6 +30,10 @@ app.get('/deltagere-1', (req, res) => {
     `);
 });
 
+app.get('/api', (req, res) => {
+    res.json({ message: 'Hello, World!' });
+});
+
 // Så starter vi serveren, som nå lytter på port 3000:
 app.listen(3000, () => {
     console.log('Server listening on port 3000');
